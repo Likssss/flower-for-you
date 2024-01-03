@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* import font */
+@font-face {
+    font-family: bla;
+    src: url(Courgette-Regular.ttf);
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: bla;
+    height: 10000px;
+}
+
+h1 {
+    text-align: center;
+    width: 300px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #969696;
+    font-size: 2rem;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mawar {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    stroke: #494949;
+    fill: #5e5e5e;
+    fill-opacity: 0;
+    stroke-width: 3;
+    transform-origin: center;
+}
+
+.scale {
+    animation: scale 1s infinite ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.heart {
+    font-size: 25px;
+    color: #a70045;
+    position: fixed;
+    top: -1vh;
+    transform: translateY(-5vh);
+    animation: fall 1s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-5vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(105vh);
+        opacity: .7;
+    }
+}
