@@ -64,7 +64,7 @@ window.addEventListener("scroll", function (e) {
   }
 
   if (scrollPercentage >= 0.8 && counter == 0) {
-    title.innerHTML = "for you :)";
+    title.innerHTML = "for my pretty girl 🫶";
     counter = 1;
     mawar.classList.add("scale");
     path.animate(
